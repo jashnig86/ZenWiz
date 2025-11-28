@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenWiz – Study Companion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="background"></div>
+
+    <div class="container">
+
+        <h1>ZenWiz – Your Study Companion</h1>
+
+        <!-- Pomodoro Timer -->
+        <div class="timer-box">
+            <h2>Pomodoro Timer</h2>
+            <p id="timer">25:00</p>
+
+            <button onclick="startPomodoro()">Start 25/5</button>
+            <button onclick="resetTimer()">Reset</button>
+        </div>
+
+        <!-- Music Player -->
+        <div class="music-box">
+            <h2>Soft Study Music</h2>
+            <audio id="player" controls>
+                <source src="music/calm1.mp3" type="audio/mpeg">
+            </audio>
+
+            <select id="musicSelect" onchange="changeMusic()">
+                <option value="calm1.mp3">Calm Track 1</option>
+                <option value="calm2.mp3">Calm Track 2</option>
+                <option value="focus.mp3">Focus Track</option>
+            </select>
+        </div>
+
+        <!-- Companion Doll -->
+        <div class="doll-section">
+            <img src="images/doll.png" class="doll" id="doll">
+            <p id="dollText">Hi! I'm ZenWiz doll 😊</p>
+            <button onclick="askDoll()">Talk to me</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
